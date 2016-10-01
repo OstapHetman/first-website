@@ -3,7 +3,6 @@
 	margin: 0;
 	padding: 0;
 	outline:none;
-
 }
 body{
 	width:100%;
@@ -16,16 +15,6 @@ body{
 	font-family: 'Raleway', sans-serif;
 	
 }
-
-
-/*.blur_background{
-	margin:0 auto;
-	padding:0 auto;
-	display:block;
-	width: 81%;
-	opacity:0.7;
-	
-}*/
 .nav{
 	background-color:#fff;
 	color:#000;
@@ -69,12 +58,10 @@ body{
 	color:#c1c1c1;
 }
 .under_line{
-	
     border-bottom: 1px solid #e3472b; /* Параметры линии под текстом */
     font-weight: normal; /* Убираем жирное начертание */
     margin-top: 1px; /* Расстояние от текста до линии */
-
-       
+ 
 }
 .banner-image{
 	margin-top:30px;
@@ -83,17 +70,6 @@ body{
 	display:block;
 	width:100%;
 }
-/*.banner{
-	width:100%;
-
-}
-.banner> .banner-image{
-	width:100%;
-	display:block;
-	height:50px%;
-}*/
-/*-----Рамка-----*/
-
 .service1{
 	width:250px;
 	border: 1px solid #c1c1c1;
@@ -159,8 +135,6 @@ label{
 span{
 	display:block;
 }
-
-
  #contact{
     padding:10px 0 10px;
   }
@@ -296,7 +270,6 @@ input {
 	padding:50px;
 }
 
-
 /*----FOOTER----*/
 * html .site-footer {
    position:absolute;
@@ -312,13 +285,11 @@ input {
 	margin-top:500px;
 }
 .sitek-footer{
-
 	border-top:1px solid rgba(0,0,0,0.3);
 	background-color:rgba(0,0,0,0.1);
 	margin-top:800px;
 }
 .bottom-footer{
-
 	padding:10px;
 	color: # b2b2b2;
 	font-size:11px;
@@ -351,7 +322,8 @@ input {
 	position:relative;
 }
 .gal{
-	width: 1300px;
+	max-width: 1300px;
+	width: 100%;
 	margin:0 auto;
 	display:block;
 	position:relative;
@@ -385,33 +357,6 @@ input {
 }
 
 /*-----------HOME PAGE-------------*/
-.fly-in-text{
-	list-style:none;
-	position:absolute;
-	left: 45%;
-	top: 70%;
-	transform: tranlateX(-50%) translateY(-50%);
-}
-.fly-in-text li{
-	display:inline-block;
-	margin-right:0px;
-	font-size:25px;
-	opacity:1;
-	transition: all 2.0s ease;
-}
-.fly-in-text li:last-child {
-                margin-right: 0;
-            }
-            .fly-in-text.hidden li {
-                opacity: 0;
-            }
-            .fly-in-text.hidden li:nth-child(1) { transform: translateX(-100px) translateY(-100px); }
-            .fly-in-text.hidden li:nth-child(2) { transform: translateX(20px) translateY(100px); }
-            .fly-in-text.hidden li:nth-child(3) { transform: translateX(-150px) translateY(-80px); }
-            .fly-in-text.hidden li:nth-child(4) { transform: translateX(10px) translateY(-100px); }
-            .fly-in-text.hidden li:nth-child(5) { transform: translateX(-100px) translateY(100px); }
-            .fly-in-text.hidden li:nth-child(6) { transform: translateX(20px) translateY(-20px); }
-            .fly-in-text.hidden li:nth-child(7) { transform: translateX(30px) translateY(100px); }
 video{
 	margin-left: auto;
     margin-right: auto;
