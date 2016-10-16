@@ -10,9 +10,7 @@ a{
 }
 .main{
 max-width: 900px;
-margin: 20px auto;
-
-
+margin: 50px auto;
 }
 /*Адаптивность картинок и видео*/
 img{
@@ -20,13 +18,12 @@ img{
   height: auto;
 }
 .sl2{
-  
   margin: 0;
   padding: 0 10px;
 }
 .sl2_slide{
 
-  margin: 0 7px;
+  margin: 25px 5px;
 }
 .slick-prev, .slick-next{
 z-index:1001;
