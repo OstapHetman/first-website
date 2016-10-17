@@ -277,13 +277,12 @@ input {
    top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
 }
 .site-footer{
-	
-  	left:0;
-  	bottom:0;
-  	width:100%;
+  left:0;
+  bottom:0;
+  width:100%;
 	border-top:1px solid rgba(0,0,0,0.3);
 	background-color:rgba(0,0,0,0.1);
-	margin-top:400px;
+	margin-top:100px;
 }
 .sitek-footer{
 	border-top:1px solid rgba(0,0,0,0.3);
@@ -304,15 +303,26 @@ input {
    list-style:none;
 }
 .footer-nav li{display:inline; padding:0px 10px; font-size:11px;color: #333; }
-.footer-nav li:not(:first-child):before{
-	content: '|';
-	padding:0px 10px;
+
+.footer-nav li:first-child{
+  float:left;
 }
 .footer-nav a{color: #b2b2b2; text-decoration:none; color: #333;}
 .footer-nav a:hover{
 	color:#fff;
 	text-decoration:none;
 }
+.footer-nav2 {
+  text-align: center;
+}
+.footer-nav2 li {
+  display: inline-block;
+}
+.follow{
+  text-align: center
+  font-size:20px;
+}
+
 
 /*-----------GALLERY PAGE------------*/
 .gallery{
