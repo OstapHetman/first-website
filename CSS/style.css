@@ -384,6 +384,16 @@ h1{
   left:0;
   right:0;
 }
+.pulse {
+  animation: pulse_2878 2s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes pulse_2878 {
+  0% { transform: scale(1.1) }
+  50% { transform: scale(0.8) }
+  100% { transform: scale(1.1) }
+}
 #nav-home2 {
   font-size: 17px;
   text-align: center;
