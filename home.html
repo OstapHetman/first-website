@@ -8,72 +8,43 @@
 	<link href="img/favicon.ico" rel="shorcut icon"type="image/x-icon" />
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<title>Ostap Hetman</title>
+	<style type="text/css">
+			
+			* {
+				margin: 0;
+				padding: 0;
+			}
+            .video-section {
+                position: relative;
+                width: 100%;
+                max-height: 100vh;
+                overflow: hidden;
+            }
+            #video-elem {
+                width: 100%;
+            }
+            video::-webkit-media-controls {
+                display:none !important;
+		</style>
 </head>
 	<body>
-<!--<body onLoad="window.scroll(0, 200)">-->
-	<!--HEADER-->
-	<ul class="nav">
-	<div class="logo">
-		<a><a class="first_letter">OH</a></a>
-		<br />
-		<p style="color:#a8a8a8"><a class="letter_p">P</a><a class="under_line">HOTOGRAPHY</a></p>
-	</div>
-	<li class="navigation"><a href="home.html">HOME</a></li>
-	<li class="navigation"><a href="about.html">ABOUT ME</a></li>
-	<li class="navigation"><a href="gallery.html">GALLERY</a></li>
-	<li class="navigation"><a href="contact.html">CONTACT</a></li>
-	</ul>
+		<div class="video-section">
+			<video id="video-elem" preload="auto" autoplay="true" loop="loop" muted="muted" > 
+				<source src="video/timelapseek.mp4" type="video/mp4">
+			</video>
+	<h1>WELCOME</h1>
+		<div id="nav-home">
+		<ul id="nav-home2">
+			<li><a href="gallery.html">GALLERY</a></li>
+			<li><a href="about.html">ABOUT ME</a></li>
+			<li><a href="contact.html">CONTACT</a></li>
+		</ul>
+		</div>
+
+
 			
-<!--BACKGROUND-->
-
-	<!--BANNER-->
-	<div class="banner">
-	<img class="banner-image" src="img/banner.jpg">
-	</div>
-	<!--SERVICES-->
-	<div class="heading">WELCOME</div>
-	
-		<!--VIDEO-->
-			<div id="intro">
-				<video   controls="controls" src="video/intro.mp4"></video>
-			</div>
-
-		<!--END VIDEO-->
-	<!--FOOTER-->
-		<footer class="site-footer">
-			<div class="container">
-			<div class="bottom-footer">
-				<div class="col-md-7">
-				<ul class="footer-nav2">
-						<h6 class="follow" style="font-size: 10px">Follow us<h6>
-						<li><a href=" https://www.facebook.com/ostapukrainian" target="_blank"><img src="img/facebook.png" ></a></li>
-						<li><a href=" https://500px.com/prickly4528" target="_blank"><img src="img/500px.png"></a></li>
-						<li><a href="https://vk.com " target="_blank"><img src="img/vkontakte.png"></a></li>			
-						</ul>
-					<ul class="footer-nav">
-						<li>&copy; 2016 Ostap Hetman Photography. All rights reserved.</li>
-						
-						<li><a href="home.html">HOME</a></li>
-						<li><a href="about.html">ABOUT ME</a></li>
-						<li><a href ="gallery.html">GALLERY</a></li>
-						<li><a href="contact.html">CONTACT</a></li>	
-					</ul>
-				</div>
-			</div>
-			</div>
-		</footer>
-		<!--END FOOTER-->
-	
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script type="text/javascript">
-            
-            $(function() {
-                
-                setTimeout(function() {
-                    $('.fly-in-text').removeClass('hidden');
-                }, 500);
-                
-            })();
-        </script>
+        <script type="text/javascript"> </script>
+ 
 </body>
 </html>
