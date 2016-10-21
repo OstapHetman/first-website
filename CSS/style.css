@@ -421,4 +421,14 @@ h1{
   opacity: 0.3;
   
 }
+.float li:hover {
+  animation: float_9042 2s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes float_9042 {
+  0% { transform: translateY(0) }
+  50% { transform: translateY(-6px) }
+  100% { transform: translateY(0) }
+}
 /*-----------END HOME PAGE---------*/
