@@ -15,7 +15,6 @@ body{
 	margin:0;
 	padding:0;
 	font-family: 'Raleway', sans-serif;
-	
 }
 .nav{
 	background-color:#fff;
@@ -370,6 +369,16 @@ input {
 }
 
 /*-----------HOME PAGE-------------*/
+#canvas-basic {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
 #imageContainer img{
   width: 100%;
   height: 100vh;
@@ -384,16 +393,7 @@ h1{
   left:0;
   right:0;
 }
-.pulse {
-  animation: pulse_2878 2s linear infinite;
-  transform-origin: 50% 50%;
-}
 
-@keyframes pulse_2878 {
-  0% { transform: scale(1.1) }
-  50% { transform: scale(0.8) }
-  100% { transform: scale(1.1) }
-}
 #nav-home2 {
   font-size: 17px;
   text-align: center;
@@ -421,14 +421,6 @@ h1{
   opacity: 0.3;
   
 }
-.float li:hover {
-  animation: float_9042 2s linear infinite;
-  transform-origin: 50% 50%;
-}
 
-@keyframes float_9042 {
-  0% { transform: translateY(0) }
-  50% { transform: translateY(-6px) }
-  100% { transform: translateY(0) }
-}
+
 /*-----------END HOME PAGE---------*/
