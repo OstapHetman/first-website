@@ -129,24 +129,32 @@ body{
 }
 /*---ABOUT ME----*/
 .portret{
-	display: block;
-    margin-left:100px;
+	display:inline-block;
+    margin-left:500px;
     width: 22%;
 	padding:0px;
-	border-radius:3%;
-	
+	border-radius:1%;
 }
 
-.hello{
-	font-size: 1.2em;
-	font-family: 'Raleway', sans-serif;
-	color:black;
-}
 .text_about{
 	margin-top:-280px;
 	margin-left:440px;
 }
+.wrap {
+   
+    margin: 20px;
+    padding: 15px;
+}
+.wrap p {
+    margin: 0;
+    overflow: hidden;
+}
 
+
+    .wrap p {
+        text-align: center;
+    }
+}
 /*--------------------CONTACT PAGE-------------*/
 /*----textbox----*/
 form{
