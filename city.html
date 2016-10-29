@@ -14,7 +14,7 @@
 	<title>Ostap Hetman</title>
 	
 </head>
-<body>
+<body style="opacity:0;transition:.5s;">
 	<!--<body onLoad="window.scroll(0, 200)">-->
 	<!--HEADER-->
 		<ul class="nav">
@@ -87,5 +87,12 @@
 	
 	<script src="slick/slick.min.js"></script>
 	<script src="js/js.js"></script>
+
+	<script>
+  $(document).ready(function() {    
+    $("body").css("opacity", "1");
+  });
+</script>
+
 </body>
 </html>
