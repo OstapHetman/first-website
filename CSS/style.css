@@ -95,6 +95,9 @@ body{
 	display:block;
 	width:100%;
 }
+.banner img{
+  height: auto;
+}
 .service1{
 	width:250px;
 	border: 1px solid #c1c1c1;
@@ -129,11 +132,12 @@ body{
 }
 /*--------------ABOUT ME---------------*/
 .wrap {
-    margin: 20px;
+    margin: 100px;
     margin-top: 20px;
     padding: 25px;
 }
 .wrap p {
+
     margin: 0;
     overflow: hidden;
 }
@@ -421,7 +425,6 @@ input {
    color:#fff;
    list-style: none;
    text-decoration: none;
-   
  }
  #nav-home2 li a:hover{
    opacity: 0.3;}
@@ -435,6 +438,7 @@ h1 {
   width: 100%;
  margin-top: 45vh;
 }
+
 .animatedclass {
   opacity: 0;
   -webkit-transform-origin: center;
