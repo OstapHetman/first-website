@@ -38,16 +38,16 @@
 }
 	</style>
 </head>
-<body>
+<body style="opacity:0;transition:.5s;"/>
 	<!--<body onLoad="window.scroll(0, 300)">-->
 	<!--HEADER-->
 	<ul class="nav">
 		<div class="logo">
-			<a><a class="first_letter">OH</a></a>
+			<a><a href="home.html" style="text-decoration:none" class="first_letter">OH</a></a>
 			<br />
-			<p style="color:#a8a8a8"><a class="letter_p">P</a><a class="under_line">HOTOGRAPHY</a></p>
+			<p style="color:#a8a8a8"><a href="home.html" style="text-decoration:none" class="letter_p">P</a><a href="home.html"
+			 style="text-decoration:none" class="under_line">HOTOGRAPHY</a></p>
 		</div>
-		<li class="navigation"><a href="home.html">HOME</a></li>
 		<li class="navigation"><a href="about.html">ABOUT ME</a></li>
 		<li class="navigation"><a href="gallery.html">GALLERY</a></li>
 		<li class="navigation"><a href="contact.html">CONTACT</a></li>
@@ -89,6 +89,11 @@
 			</div>
 		</footer>
 		<!--END FOOTER-->
+			<script>
+  $(document).ready(function() {    
+    $("body").css("opacity", "1");
+  });
+</script>
 		<script src="js/wow.min.js"></script>
 		<script>
 			new WOW().init();

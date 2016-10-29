@@ -86,7 +86,7 @@ body{
     border-bottom: 1px solid #e3472b; /* Параметры линии под текстом */
     font-weight: normal; /* Убираем жирное начертание */
     margin-top: 1px; /* Расстояние от текста до линии */
- 
+ color:#c1c1c1;
 }
 .banner-image{
 	margin-top:30px;

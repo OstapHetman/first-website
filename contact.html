@@ -12,97 +12,101 @@
 	<script src="wow.min.js" type="text/javascript"></script>
 	<title>Ostap Hetman</title>
 </head>
-<body>
-<!--<body onLoad="window.scroll(0, 350)">-->
-<!--HEADER-->
-<ul class="nav">
-	<div class="logo">
-		<a><a class="first_letter">OH</a></a>
-		<br />
-		<p style="color:#a8a8a8"><a class="letter_p">P</a><a class="under_line">HOTOGRAPHY</a></p>
-	</div>
-	<li class="navigation"><a href="home.html">HOME</a></li>
-	<li class="navigation"><a href="about.html">ABOUT ME</a></li>
-	<li class="navigation"><a href="gallery.html">GALLERY</a></li>
-	<li class="navigation"><a href="contact.html">CONTACT</a></li>
-</ul>
-<!--BANNER-->
-<div class="banner" style="height:10%;">
-	<img class="banner-image" src="img/banner.jpg" style="height=10%;">
-</div>
-
-
-<!--CONTACT PAGE-->
-<div class="heading wow fadeInLeftBig" data-wow-duration="2s">CONTACT</div>
-<!--END CONTACT PAGE-->
-<div class="inner contact">
-	<!-- Form Area -->
-	<div class="contact-form">
-		<!-- Form -->
-		<form id="contact-us" method="post">
-			<!-- Left Inputs -->
-			<div class="col-xs-6">
-				<!-- Name -->
-				<input type="text" name="name" id="name" required="required" class="form" placeholder="Name" />
-				<!-- Email -->
-				<input type="email" name="mail" id="mail" required="required" class="form" placeholder="Email" />
-				<!-- Subject -->
-				<input type="text" name="subject" id="subject" required="required" class="form" placeholder="Subject" />
-			</div><!-- End Left Inputs -->
-			<!-- Right Inputs -->
-			<div class="col-xs-6">
-				<!-- Message -->
-				<textarea name="message" id="message" class="form textarea"  placeholder="Message"></textarea>
-			</div><!-- End Right Inputs -->
-			<!-- Bottom Submit -->
-			<div class="relative fullwidth col-xs-12">
-				<!-- Send Button -->
-				<button type="submit" id="submit" name="submit" class="form-btn semibold">Send Message</button> 
-			</div><!-- End Bottom Submit -->
-			<!-- Clear -->
-			<div class="clear"></div>
-		</form>
-
-		<!-- Your Mail Message -->
-		<div class="mail-message-area">
-			<!-- Message -->
-			<div class="alert gray-bg mail-message not-visible-message">
-				<strong>Thank You !</strong> Your email has been delivered.
-			</div>
+<body style="opacity:0;transition:.5s;">
+	<!--<body onLoad="window.scroll(0, 350)">-->
+	<!--HEADER-->
+	<ul class="nav">
+		<div class="logo">
+			<a><a href="home.html" style="text-decoration:none" class="first_letter">OH</a></a>
+			<br />
+			<p style="color:#a8a8a8,"><a href="home.html" style="text-decoration:none" class="letter_p">P</a><a href="home.html" style="text-decoration:none" class="under_line">HOTOGRAPHY</a></p>
 		</div>
+		<li class="navigation"><a href="about.html">ABOUT ME</a></li>
+		<li class="navigation"><a href="gallery.html">GALLERY</a></li>
+		<li class="navigation"><a href="contact.html">CONTACT</a></li>
+	</ul>
+	<!--BANNER-->
+	<div class="banner" style="height:10%;">
+		<img class="banner-image" src="img/banner.jpg" style="height=10%;">
+	</div>
 
-	</div><!-- End Contact Form Area -->
-</div><!-- End Inner -->
 
-<!--FOOTER-->
-<footer class="site-footer">
-	<div class="container">
-		<div class="bottom-footer">
-			<div class="col-md-7">
-				<ul class="footer-nav2">
-					<h6 class="follow" style="font-size: 10px">Follow us<h6>
-						<li><a href=" https://www.facebook.com/ostapukrainian" target="_blank"><img src="img/facebook.png" ></a></li>
-						<li><a href=" https://500px.com/prickly4528" target="_blank"><img src="img/500px.png"></a></li>
-						<li><a href="https://vk.com/ostaphetman_photo" target="_blank"><img src="img/vkontakte.png"></a></li>			
-					</ul>
-					<ul class="footer-nav">
-						<li>&copy; 2016 Ostap Hetman Photography. All rights reserved.</li>
-						
-						<li><a href="home.html">HOME</a></li>
-						<li><a href="about.html">ABOUT ME</a></li>
-						<li><a href ="gallery.html">GALLERY</a></li>
-						<li><a href="contact.html">CONTACT</a></li>	
-					</ul>
+	<!--CONTACT PAGE-->
+	<div class="heading wow fadeInLeftBig" data-wow-duration="2s">CONTACT</div>
+	<!--END CONTACT PAGE-->
+	<div class="inner contact">
+		<!-- Form Area -->
+		<div class="contact-form">
+			<!-- Form -->
+			<form id="contact-us" method="post">
+				<!-- Left Inputs -->
+				<div class="col-xs-6">
+					<!-- Name -->
+					<input type="text" name="name" id="name" required="required" class="form" placeholder="Name" />
+					<!-- Email -->
+					<input type="email" name="mail" id="mail" required="required" class="form" placeholder="Email" />
+					<!-- Subject -->
+					<input type="text" name="subject" id="subject" required="required" class="form" placeholder="Subject" />
+				</div><!-- End Left Inputs -->
+				<!-- Right Inputs -->
+				<div class="col-xs-6">
+					<!-- Message -->
+					<textarea name="message" id="message" class="form textarea"  placeholder="Message"></textarea>
+				</div><!-- End Right Inputs -->
+				<!-- Bottom Submit -->
+				<div class="relative fullwidth col-xs-12">
+					<!-- Send Button -->
+					<button type="submit" id="submit" name="submit" class="form-btn semibold">Send Message</button> 
+				</div><!-- End Bottom Submit -->
+				<!-- Clear -->
+				<div class="clear"></div>
+			</form>
+
+			<!-- Your Mail Message -->
+			<div class="mail-message-area">
+				<!-- Message -->
+				<div class="alert gray-bg mail-message not-visible-message">
+					<strong>Thank You !</strong> Your email has been delivered.
 				</div>
 			</div>
-		</div>
-	</footer>
-	<!--END FOOTER-->
-	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-	<script src="common.js"></script>
-	<script src="js/wow.min.js"></script>
-              <script>
-              new WOW().init();
-              </script>
-</body>
-</html>
+
+		</div><!-- End Contact Form Area -->
+	</div><!-- End Inner -->
+
+	<!--FOOTER-->
+	<footer class="site-footer">
+		<div class="container">
+			<div class="bottom-footer">
+				<div class="col-md-7">
+					<ul class="footer-nav2">
+						<h6 class="follow" style="font-size: 10px">Follow us<h6>
+							<li><a href=" https://www.facebook.com/ostapukrainian" target="_blank"><img src="img/facebook.png" ></a></li>
+							<li><a href=" https://500px.com/prickly4528" target="_blank"><img src="img/500px.png"></a></li>
+							<li><a href="https://vk.com/ostaphetman_photo" target="_blank"><img src="img/vkontakte.png"></a></li>			
+						</ul>
+						<ul class="footer-nav">
+							<li>&copy; 2016 Ostap Hetman Photography. All rights reserved.</li>
+							
+							<li><a href="home.html">HOME</a></li>
+							<li><a href="about.html">ABOUT ME</a></li>
+							<li><a href ="gallery.html">GALLERY</a></li>
+							<li><a href="contact.html">CONTACT</a></li>	
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--END FOOTER-->
+		<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script src="common.js"></script>
+		<script>
+			$(document).ready(function() {    
+				$("body").css("opacity", "1");
+			});
+		</script>	
+		<script src="js/wow.min.js"></script>
+		<script>
+			new WOW().init();
+		</script>
+	</body>
+	</html>

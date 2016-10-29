@@ -10,7 +10,7 @@
 	<title>Ostap Hetman</title>
 	<script src="granim.min.js" charset="UTF-8"></script>
 </head>
-<body>
+<body style="opacity:0;transition:.5s;">
 
 		<canvas id="canvas-basic"></canvas>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -34,7 +34,11 @@
 			});
 
 		</script>
-		
+		<script>
+  $(document).ready(function() {    
+    $("body").css("opacity", "1");
+  });
+  </script>
 		<h1 class="animatedclass"> Welcome.</h1>
 		<div id="nav-home">
 			<ul id="nav-home2" class="vertical">
