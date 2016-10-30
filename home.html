@@ -17,41 +17,43 @@
 </head>
 <body style="opacity:0;transition:.5s;">
 
-		<canvas id="canvas-basic"></canvas>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		<script type="text/javascript"> 
-			var granimInstance = new Granim({
-				element: '#canvas-basic',
-				name: 'radial-gradient',
-				direction: 'radial',
-				opacity: [1, 1],
-				isPausedWhenNotInView: true,
-				states : {
-					"default-state": {
-						gradients: [
-						['#F5F5F5', '#A9A9A9'],
-						['#D3D3D3', '#C0C0C0'],
-						['#A9A9A9', '#808080']
-						]
-					}
+	<canvas id="canvas-basic"></canvas>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript"> 
+		var granimInstance = new Granim({
+			element: '#canvas-basic',
+			name: 'radial-gradient',
+			direction: 'radial',
+			opacity: [1, 1],
+			isPausedWhenNotInView: true,
+			states : {
+				"default-state": {
+					gradients: [
+					['#F5F5F5', '#A9A9A9'],
+					['#D3D3D3', '#C0C0C0'],
+					['#A9A9A9', '#808080']
+					]
 				}
-			});
+			}
+		});
 
-		</script>
-		<script>
-  $(document).ready(function() {    
-    $("body").css("opacity", "1");
-  });
-  </script>
-		<h1 class="animatedclass"> Welcome.</h1>
-		
-		<div id="nav-home">
-			<ul id="nav-home2" class="vertical">
-				<li><a href="gallery.html">Let's Go.</a></li>
-			</ul>
+	</script>
+	<script>
+		$(document).ready(function() {    
+			$("body").css("opacity", "1");
+		});
+	</script>
 
-		</div>
+	<h1 class="animatedclass"> Welcome.
+	<p>Ostap Hetman Photography.</p>
+	</h1>
+	<div id="nav-home">
+		<ul id="nav-home2" class="vertical">
+			<li><a href="gallery.html">Let's Go.</a></li>
+		</ul>
 
-	</body>
-	</html>
+	</div>
+
+</body>
+</html>

@@ -309,11 +309,7 @@ input {
 	background-color:rgba(0,0,0,0.1);
 	margin-top:100px;
 }
-.sitek-footer{
-	border-top:1px solid rgba(0,0,0,0.3);
-	background-color:rgba(0,0,0,0.1);
-	margin-top:800px;
-}
+
 .bottom-footer{
 	padding:10px;
 	color: # b2b2b2;
@@ -346,6 +342,11 @@ input {
 .follow{
   text-align: center
   font-size:20px;
+}
+#foot-block{
+  width: 100%;
+  height: auto;
+  float:left;
 }
 /*-----------GALLERY PAGE------------*/
 .gallery{
@@ -438,6 +439,21 @@ h1 {
   width: 100%;
  margin-top: 45vh;
 }
+.animatedclass p{
+  font-size: 17px;
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin-top: 5vh;
+}
+.animatedclass p:nth-child(2){
+  font-size: 17px;
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin-top: 0vh;
+}
+
 
 .animatedclass {
   opacity: 0;
