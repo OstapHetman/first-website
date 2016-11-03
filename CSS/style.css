@@ -375,10 +375,12 @@ input {
 	position:relative;
 
 	 -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    -ms-filter:grayscale(100%);
     filter: grayscale(100%);
 }
 .cover:hover{
 	-webkit-filter: grayscale(0); /* Chrome, Safari, Opera */
+  -ms-filter:grayscale(0);
     filter: grayscale(0);
 	transition: all 1.5s ease;
 }
@@ -393,6 +395,7 @@ input {
 	padding:5px 20px;
 	background:rgba(0,0,0,0.6);
 }
+
 
 /*-----------HOME PAGE-------------*/
 #canvas-basic {
