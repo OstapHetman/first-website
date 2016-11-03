@@ -28,12 +28,17 @@ body{
 	display:inline-block;
 	padding-right: 50px;
 	font-size: 13px;
+  -webkit-transition: max-height 0.4s;
+  -ms-transition: max-height 0.4s;
+  -moz-transition: max-height 0.4s;
+  -o-transition: max-height 0.4s;
 }
 .nav > li > a{
   position: relative;
 	text-decoration: none;
 	color:#000;
 }
+
 .nav >li>a:hover{
 	color:#c1c1c1;
 }
