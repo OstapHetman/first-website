@@ -57,10 +57,10 @@ header {
   display: block;
   padding: 12px 15px;
   font-size: 14px;
-  color: black;
+  color: #050802;
 }
 .nav li a:hover,
-#touch-menu:hover {color: black;}
+#touch-menu:hover {color: #050802;}
 
 #touch-menu {display: none;}
 
@@ -85,6 +85,7 @@ header {
   .nav li {float: none;}
   .nav li a {
     color: #666;
+    opacity:0.98;
     border-top: 1px solid #eee;
     border-left: 3px solid transparent;
     background: #fff;
@@ -92,7 +93,6 @@ header {
   .nav li:first-child a {border-top: none;}
   .nav li a:hover {
     color: #333;
-    border-left: 3px solid #515572;
     background: #f0f0f0;
   }
   #touch-menu {
@@ -111,9 +111,9 @@ header {
 
   }
   .nav >li>a:hover{
-    color:#c1c1c1;
+    color:#A6A9A5;
   }
-li>a:before {
+.nav>li>a:before {
    content: "";
    position: absolute;
    width: 95%;
@@ -127,7 +127,7 @@ li>a:before {
    -webkit-transition: all 0.3s ease-in-out 0s;
    transition: all 0.3s ease-in-out 0s;
  }
-li>a:hover:before {
+.nav>li>a:hover:before {
   margin-bottom: 10px;
    visibility: visible;
    -webkit-transform: scaleX(1);
@@ -197,8 +197,7 @@ li>a:hover:before {
         text-align: center;
     }
 
-
-/*--------------------CONTACT PAGE-------------*/
+              /*--------------------CONTACT PAGE-------------*/
 /*----textbox----*/
 form{
 	max-width:450px;
@@ -332,7 +331,7 @@ span{
   .form-btn:active{
     opacity: 0.9;
   }
-center{
+.center{
   margin-top:330px;
 }
 input {
@@ -347,7 +346,7 @@ input {
 	padding:50px;
 }
 
-/*----FOOTER----*/
+                                      /*----FOOTER----*/
 * html .site-footer {
    position:absolute;
    top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
@@ -357,31 +356,31 @@ input {
   bottom:0;
   width:100%;
 	border-top:1px solid rgba(0,0,0,0.3);
-	background-color:rgba(0,0,0,0.1);
+	background-color:#CCCFDC;
 	margin-top:100px;
 }
-
 .bottom-footer{
 	padding:10px;
-	color: # b2b2b2;
+	color: #CCCFDC;
 	font-size:11px;
-	color: #333;
+	color: #050802;
 }
 .footer-nav{
+  color:#050802;
    left:0px;
    bottom:0px;
    width:100%;
    text-align:right;
    list-style:none;
 }
-.footer-nav li{display:inline; padding:0px 10px; font-size:11px;color: #333; }
+.footer-nav li{display:inline; padding:0px 10px; font-size:11px;color: #050802; }
 
 .footer-nav li:first-child{
   float:left;
 }
-.footer-nav a{color: #b2b2b2;  color: #333;}
+.footer-nav a{color: #050802;}
 .footer-nav a:hover{
-	color:#fff;
+	color:#A6A9A5;
 }
 .footer-nav2 {
   text-align: center;
@@ -393,6 +392,7 @@ input {
   text-align: center
   font-size:20px;
 }
+
 #foot-block{
   width: 100%;
   height: auto;

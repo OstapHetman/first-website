@@ -17,17 +17,22 @@
 </head>
 <body style="opacity:0;transition:.5s;">
 	<!--<body onLoad="window.scroll(0, 200)">-->
-	<!--HEADER-->
-		<ul class="nav">
+	
+																							<!--HEADER-->
+	<header class="container clearfix">
 		<div class="logo">
-			<a><a href="index.html" style="text-decoration:none" class="first_letter">OH</a></a>
-			<br />
-			<p style="color:#a8a8a8"><a href="index.html" style="text-decoration:none" class="letter_p">P</a><a href="index.html" style="text-decoration:none" class="under_line">HOTOGRAPHY</a></p>
+			<a href="index.html"><img src="img/logo.jpg"/></a>
 		</div>
-		<li class="navigation"><a href="about.html">ABOUT ME</a></li>
-		<li class="navigation"><a href="gallery.html">GALLERY</a></li>
-		<li class="navigation"><a href="contact.html">CONTACT</a></li>
-	</ul>
+		<a href="#" id="touch-menu">MENU</a>
+		<nav>
+			<ul class="nav clearfix">
+				<li><a href="about.html">ABOUT ME</a></li>
+				<li><a href="gallery.html">GALLERY</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</nav>
+	</header>
+																					<!--END HEADER-->
 	
 	<div class='main'>
 		<div class="sl">
@@ -94,6 +99,24 @@
     $("body").css("opacity", "1");
   });
 </script>
+<!-- 				RESPONSIVE NAVIGATION SCRIPT         -->
+<script type="text/javascript">
+	$(document).ready(function(){
+		var touch = $('#touch-menu');
+		var menu = $('.nav');
 
+		$(touch).on('click', function(e) {
+			e.preventDefault();
+			menu.slideToggle();
+		});
+		$(window).resize(function(){
+			var wid = $(window).width();
+			if(wid > 760 && menu.is(':hidden')) {
+				menu.removeAttr('style');
+			}
+		});
+	});
+</script>
+	<!-- 				END RESPONSIVE NAVIGATION SCRIPT         -->
 </body>
 </html>
