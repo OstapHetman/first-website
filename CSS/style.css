@@ -6,7 +6,17 @@
 	outline:none;
 	box-sizing: border-box;
 }
+ol, ul {list-style: none;}
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
 
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a, a:hover {text-decoration: none;}
 body{
 	width:100%;
 	height:100%;
@@ -17,93 +27,88 @@ body{
 	padding:0;
 	font-family: 'Raleway', sans-serif;
 }
-.nav{
-	background-color:#fff;
-	color:#000;
-	list-style: none;
-	text-align: right;
-	padding:20px 0 0 0;
+                    /*********** NAVIGATION***********/
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
 }
-.nav > li{
-	display:inline-block;
-	padding-right: 50px;
-	font-size: 13px;
+.clearfix:after {clear: both;}
 
+.left {float:left;}
+.right {float:right;}
+.text-right {text-align: right;}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
 }
-.nav > li > a{
+
+header {
   position: relative;
-	text-decoration: none;
-	color:#000;
+  padding: 10px;
+  background: none;
 }
+.logo {float: left;}
+.nav {float: right;}
+.nav li {float: left;}
+.nav li a,
+#touch-menu {
+  display: block;
+  padding: 12px 15px;
+  font-size: 14px;
+  color: #c1c1c1;
+}
+.nav li a:hover,
+#touch-menu:hover {color: black;}
 
-.nav >li>a:hover{
-	color:#c1c1c1;
-}
-.nav >li>a:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #c1c1c1;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-.nav>li>a:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-@media only screen and (max-width : 550px) {
-  .nav li{
+#touch-menu {display: none;}
+
+    /********** MEDIA QUERY *********/
+@media (max-width: 768px) {
+  body {padding-top: 60px}
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+  }
+  .logo img {height: 30px;}
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+  }
+  .nav li {float: none;}
+  .nav li a {
+    color: #666;
+    border-top: 1px solid #eee;
+    border-left: 3px solid transparent;
+    background: #fff;
+  }
+  .nav li:first-child a {border-top: none;}
+  .nav li a:hover {
+    color: #333;
+    border-left: 3px solid #515572;
+    background: #f0f0f0;
+  }
+  #touch-menu {
     display: block;
-    float: none;
-    width: 100%;
-     text-align: center;
+    float: right;
+    height: 50px;
+    margin: -10px 0;
   }
-  .navigation{
-    padding-top: 30px;
-  }
-  
 }
-.navigation{
-	margin-top:12px;
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-.logo{
-	max-width:65%;
-	float:left;
-	padding-left: 10px;
-	
-}
-.logo>a{
-	text-decoration:none;
-	color:#000;
-}
-.first_letter{
-	float:left;
-	font-size:1.5em;
-	margin-left:45px;
-}
-.letter_p{
-	float:left;
-	font-size: 1.5em;
-	color:#c1c1c1;
-}
-.under_line{
-    border-bottom: 1px solid #e3472b; /* Параметры линии под текстом */
-    font-weight: normal; /* Убираем жирное начертание */
-    margin-top: 1px; /* Расстояние от текста до линии */
- color:#c1c1c1;
-}
+    /********** END MEDIA QUERY *********/
+
+ 
+
+              /***  BANNER-IMG ***/
 .banner-image{
-	margin-top:30px;
+	margin-top:  10px;
 	border:0.08em solid #c1c1c1;
 	height:330px;
 	display:block;
@@ -112,6 +117,7 @@ body{
 .banner img{
   height: auto;
 }
+            /***  END BANNER-IMG ***/
 .service1{
 	width:250px;
 	border: 1px solid #c1c1c1;
@@ -146,7 +152,7 @@ body{
 }
 /*--------------ABOUT ME---------------*/
 .wrap {
-    margin: 100px;
+    margin: 20px;
     margin-top: 20px;
     padding: 25px;
 }
@@ -342,10 +348,9 @@ input {
 .footer-nav li:first-child{
   float:left;
 }
-.footer-nav a{color: #b2b2b2; text-decoration:none; color: #333;}
+.footer-nav a{color: #b2b2b2;  color: #333;}
 .footer-nav a:hover{
 	color:#fff;
-	text-decoration:none;
 }
 .footer-nav2 {
   text-align: center;
@@ -361,6 +366,14 @@ input {
   width: 100%;
   height: auto;
   float:left;
+}
+@media only screen and (max-width : 550px) {
+  .footer-nav li{
+    display: block;
+    float: none;
+    width: 100%;
+     text-align: center;
+  }
 }
 /*-----------GALLERY PAGE------------*/
 .gallery{
@@ -379,6 +392,13 @@ input {
 	display:block;
 	position:relative;
 	
+}
+@media only screen and (max-width : 550px) {
+  .gal{
+margin:0;
+padding: 0;
+width: 100%;
+  }
 }
 .cover{
 	max-width: 450px;
@@ -442,7 +462,7 @@ input {
  #nav-home2 li a{
    color:#fff;
    list-style: none;
-   text-decoration: none;
+;
  }
  #nav-home2 li a:hover{
    opacity: 0.3;}
@@ -451,7 +471,7 @@ input {
 h1 {
  color:white;
  text-align:center;
- font-size:6em ;
+ font-size:4em ;
   display: block;
   width: 100%;
  margin-top: 45vh;

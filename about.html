@@ -29,82 +29,107 @@
 		}
 		#about{
 			-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
-    filter: grayscale(100%);
+			filter: grayscale(100%);
 		}
 		#about:hover{
-	-webkit-filter: grayscale(0); /* Chrome, Safari, Opera */
-    filter: grayscale(0);
-	transition: all 1.5s ease;
-}
+			-webkit-filter: grayscale(0); /* Chrome, Safari, Opera */
+			filter: grayscale(0);
+			transition: all 1.5s ease;
+		}
 	</style>
 </head>
 <body style="opacity:0;transition:.5s;"/>
 
-	<!--<body onLoad="window.scroll(0, 300)">-->
-	<!--HEADER-->
-<ul class="nav">
-<div class="logo">
-			<a><a href="index.html" style="text-decoration:none" class="first_letter">OH</a></a>
-			<br />
-			<p style="color:#a8a8a8"><a href="index.html" style="text-decoration:none" class="letter_p">P</a><a href="index.html"
-			 style="text-decoration:none" class="under_line">HOTOGRAPHY</a></p>
+<!--<body onLoad="window.scroll(0, 300)">-->
+
+
+																						<!--HEADER-->
+	<header class="container clearfix">
+		<div class="logo">
+			<a href="#"><img src="img/logo.jpg"/></a>
 		</div>
-		<li class="navigation"><a href="about.html">ABOUT ME</a></li>
-		<li class="navigation"><a href="gallery.html">GALLERY</a></li>
-		<li class="navigation"><a href="contact.html">CONTACT</a></li>
-	</ul>
+		<a href="#" id="touch-menu">MENU</a>
+		<nav>
+			<ul class="nav clearfix">
+				<li><a href="about.html">ABOUT ME</a></li>
+				<li><a href="gallery.html">GALLERY</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</nav>
+	</header>
+																					<!--END HEADER-->
+		<!--BANNER-->
+		<div class="banner">
+			<img class="banner-image" src="img/banner.jpg">
+		</div>
+		<!--SERVICES-->
+		<div class="heading wow fadeInLeftBig" data-wow-duration="2s">ABOUT ME</div>
+		<img id="about" src="img/Hetman.jpg" srcset="img/Hetman.jpg  1120w,img/Hetman.jpg 720w,img/Hetman.jpg  400w" sizes="(min-width: 40em) calc(66.6vw - 4em) 100vw"/>
+		<div class="wrap">
+			<p class="hello"> HELLO! I'm Ostap. I'm 20 and I like that I do.I've been interested in photography for several years and have really started shooting in 2010. I'm currently based in the beautiful city of Lviv. I hope that you get as much enjoyment from my work as that went into making it.</p>
+		</div>
 
 
-	<!--BANNER-->
-	<div class="banner">
-		<img class="banner-image" src="img/banner.jpg">
-	</div>
-	<!--SERVICES-->
-	<div class="heading wow fadeInLeftBig" data-wow-duration="2s">ABOUT ME</div>
-	<img id="about" src="img/Hetman.jpg" srcset="img/Hetman.jpg  1120w,img/Hetman.jpg 720w,img/Hetman.jpg  400w" sizes="(min-width: 40em) calc(66.6vw - 4em) 100vw"/>
-	<div class="wrap">
-		<p class="hello"> HELLO! I'm Ostap. I'm 20 and I like that I do.I've been interested in photography for several years and have really started shooting in 2010. I'm currently based in the beautiful city of Lviv. I hope that you get as much enjoyment from my work as that went into making it.</p>
-	</div>
 
-
-
-	<!--FOOTER-->
-	<footer class="site-footer">
-		<div class="container">
-			<div class="bottom-footer">
-				<div class="col-md-7">
-					<ul class="footer-nav2">
-						<h6 class="follow" style="font-size: 10px">FOLLOW US<h6>
-							<li><a href=" https://www.facebook.com/ostapukrainian" target="_blank"><img src="img/facebook.png" ></a></li>
-							<li><a href=" https://500px.com/prickly4528" target="_blank"><img src="img/500px.png"></a></li>
-							<li><a href="https://vk.com/ostaphetman_photo" target="_blank"><img src="img/vkontakte.png"></a></li>			
-						</ul>
-						<ul class="footer-nav">
-							<li>&copy;2016 OH PHOTOGRAPHY</li>
-							<li><a href="index.html">HOME</a></li>
-							<li><a href="about.html">ABOUT ME</a></li>
-							<li><a href ="gallery.html">GALLERY</a></li>
-							<li><a href="contact.html">CONTACT</a></li>	
-						</ul>
+		<!--FOOTER-->
+		<footer class="site-footer">
+			<div class="container">
+				<div class="bottom-footer">
+					<div class="col-md-7">
+						<ul class="footer-nav2">
+							<h6 class="follow" style="font-size: 10px">FOLLOW US<h6>
+								<li><a href=" https://www.facebook.com/ostapukrainian" target="_blank"><img src="img/facebook.png" ></a></li>
+								<li><a href=" https://500px.com/prickly4528" target="_blank"><img src="img/500px.png"></a></li>
+								<li><a href="https://vk.com/ostaphetman_photo" target="_blank"><img src="img/vkontakte.png"></a></li>			
+							</ul>
+							<ul class="footer-nav">
+								<li>&copy;2016 OH PHOTOGRAPHY</li>
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="about.html">ABOUT ME</a></li>
+								<li><a href ="gallery.html">GALLERY</a></li>
+								<li><a href="contact.html">CONTACT</a></li>	
+							</ul>
+						</div>
 					</div>
 				</div>
-			</div>
-		</footer>
-		<!--END FOOTER-->
-		<script type="text/javascript">
-			$('handle').on('click', function(){
+			</footer>
+			<!--       END FOOTER          -->
+			
+			<script type="text/javascript">
+				$('handle').on('click', function(){
 					$('nav ul').toggleClass('showing');
-			});
-		</script>
+				});
+			</script>
 			<script>
-  $(document).ready(function() {    
-    $("body").css("opacity", "1");
-  });
-</script>
-		<script src="js/wow.min.js"></script>
-		<script>
-			new WOW().init();
-		</script>
+				$(document).ready(function() {    
+					$("body").css("opacity", "1");
+				});
+			</script>
+			<!-- 	ANIMATION FOR TEXT  -->
+			<script src="js/wow.min.js"></script>
+			<script>
+				new WOW().init();
+			</script>
+			<!-- 	END ANIMATION FOR TEXT  -->
+			
+	<!-- 				RESPONSIVE NAVIGATION SCRIPT         -->
+<script type="text/javascript">
+	$(document).ready(function(){
+		var touch = $('#touch-menu');
+		var menu = $('.nav');
 
-	</body>
-	</html>
+		$(touch).on('click', function(e) {
+			e.preventDefault();
+			menu.slideToggle();
+		});
+		$(window).resize(function(){
+			var wid = $(window).width();
+			if(wid > 760 && menu.is(':hidden')) {
+				menu.removeAttr('style');
+			}
+		});
+	});
+</script>
+	<!-- 				END RESPONSIVE NAVIGATION SCRIPT         -->
+</body>
+</html>
