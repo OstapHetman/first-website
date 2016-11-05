@@ -57,7 +57,7 @@ header {
   display: block;
   padding: 12px 15px;
   font-size: 14px;
-  color: #c1c1c1;
+  color: black;
 }
 .nav li a:hover,
 #touch-menu:hover {color: black;}
@@ -104,7 +104,38 @@ header {
 }
     /********** END MEDIA QUERY *********/
 
- 
+    /********** HOVER DESIGN *********/
+ .nav > li > a{
+  position: relative;
+  box-sizing: border-box;
+
+  }
+  .nav >li>a:hover{
+    color:#c1c1c1;
+  }
+li>a:before {
+   content: "";
+   position: absolute;
+   width: 95%;
+   height: 1px;
+   bottom: 0;
+   left: 0.1em;
+   background-color: #c1c1c1;
+   visibility: hidden;
+   -webkit-transform: scaleX(0);
+   transform: scaleX(0);
+   -webkit-transition: all 0.3s ease-in-out 0s;
+   transition: all 0.3s ease-in-out 0s;
+ }
+li>a:hover:before {
+  margin-bottom: 10px;
+   visibility: visible;
+   -webkit-transform: scaleX(1);
+   transform: scaleX(1);
+ }
+    /********** END HOVER DESIGN *********/
+
+              /*******END NAVIGATION**********/
 
               /***  BANNER-IMG ***/
 .banner-image{
