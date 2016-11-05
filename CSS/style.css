@@ -84,16 +84,20 @@ header {
   }
   .nav li {float: none;}
   .nav li a {
-    color: #666;
     opacity:0.98;
     border-top: 1px solid #eee;
     border-left: 3px solid transparent;
     background: #fff;
+      text-align: center;
   }
   .nav li:first-child a {border-top: none;}
   .nav li a:hover {
-    color: #333;
-    background: #f0f0f0;
+    color:none;
+    width: 100%;
+  }
+  .nav li a:hover:before {
+    color:none;
+    width: 100%;
   }
   #touch-menu {
     display: block;
@@ -151,7 +155,7 @@ header {
             /***  END BANNER-IMG ***/
 .service1{
 	width:250px;
-	border: 1px solid #c1c1c1;
+	border: 1px solid #A6A9A5;
 	margin: 20px 10px;
 	padding: 0 5px;
 	float: left;
@@ -203,7 +207,7 @@ form{
 	max-width:450px;
 	margin:0 auto 50px;
 }
-input, textarea{border: 1px solid silver}
+input, textarea{border: 1px solid #A6A9A5}
 label{
 	display:block;
 	margin-bottom: 20px;
@@ -254,7 +258,7 @@ span{
     background:#f8f8f8;
     border:1px solid rgba(0, 0, 0, 0.075);
     margin-bottom:25px;
-    color:#727272 !important;
+    color:#A6A9A5 !important;
     font-size:13px;
     -webkit-transition: all 0.4s;
     -moz-transition: all 0.4s;
@@ -262,13 +266,13 @@ span{
   }
 
   .form:hover{
-    border:1px solid silver;
+    border:1px solid #A6A9A5;
   }
 
   .form:focus{
     color: white;
     outline: none;
-    border:1px solid #8BC3A3;
+    border:1px solid #A6A9A5;
   }
 
   .textarea{
@@ -281,7 +285,7 @@ span{
 
   .button{
     padding:8px 12px;
-    background:#0A5175;
+    background:#A6A9A5;
     display: block;
     width:120px;
     margin:10px 0 0px 0;
@@ -295,21 +299,19 @@ span{
     -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
     -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
   }
-
   .button:hover{
     background:#8BC3A3;
     color:white;
   }
 
 /* Send Button Styles */
-
   .form-btn{
     width:180px;
     display: block;
     height: auto;
     padding:15px;
     color:#fff;
-    background:#c1c1c1;
+    background:#A6A9A5;
     border:none;
     border-radius:3px;
     outline: none;
@@ -323,7 +325,7 @@ span{
   }
 
   .form-btn:hover{
-    background:#111;
+    background:#050802;
     color: white;
     border:none;
   }
@@ -398,7 +400,7 @@ input {
   height: auto;
   float:left;
 }
-@media only screen and (max-width : 550px) {
+@media only screen and (max-width : 768px) {
   .footer-nav li{
     display: block;
     float: none;
@@ -408,9 +410,9 @@ input {
 }
 /*-----------GALLERY PAGE------------*/
 .gallery{
-	max-width:400px;
+	max-width:433.29px;
 	width: 100%;
-	left:40px ;
+  margin:0 auto;
 	padding: 0 5px;
 	float: left;
 	position:relative;
@@ -419,24 +421,16 @@ input {
 	max-width: 1300px;
 	width: 100%;
 	margin:0 auto;
-
 	display:block;
 	position:relative;
-	
 }
-@media only screen and (max-width : 550px) {
-  .gal{
-margin:0;
-padding: 0;
-width: 100%;
-  }
-}
+
 .cover{
 	max-width: 450px;
 	width: 100%;
 	height:300px;
 	display: block;
-	border: 1px solid #c1c1c1;
+	border: 1px solid #A6A9A5;
 	position:relative;
 
 	 -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
@@ -460,8 +454,6 @@ width: 100%;
 	padding:5px 20px;
 	background:rgba(0,0,0,0.6);
 }
-
-
 /*-----------HOME PAGE-------------*/
 #canvas-basic {
     position: absolute;
@@ -507,6 +499,17 @@ h1 {
   width: 100%;
  margin-top: 45vh;
 }
+/******MEDIA QUERY******/
+@media (max-width: 768px)
+{
+  h1{
+    margin-top:30vh;
+  }
+
+}
+
+/*****END MEDIA QUERY***/
+
 .animatedclass p{
   font-size: 17px;
   text-align: center;
